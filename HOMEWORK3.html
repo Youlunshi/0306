@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>調查表</title>
+    <style>
+        .input-group {
+            border: 1px solid;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: inline-block;
+            width: 300px; /* 可以調整寬度 */
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>行動電話使用意見調查表</h1>
+    
+    <!-- 姓名和email都在同一個框框中 -->
+    <div class="input-group">
+        <label for="name">姓名:</label>
+        <input type="text" id="name" name="姓名">
+        <br>
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email">
+    </div>
+
+    <p>您使用手機時最常碰到什麼問題?</p>
+    <textarea></textarea>
+    <br>
+
+    <form>
+        <p>您使用過哪家業者的門號?(可複選)</p>
+        <select id="cars" name="cars" size="4" multiple>
+            <option value="中華電信">中華電信</option>
+            <option value="台灣大哥大">台灣大哥大</option>
+            <option value="遠傳">遠傳</option>
+            <option value="台灣之星">台灣之星</option>
+        </select>
+        <input type="submit" value="提交">
+        <input type="reset" value="重設">
+    </form>
+
+</body>
+</html>
